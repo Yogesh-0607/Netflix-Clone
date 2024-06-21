@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    font-size: 1.5vw;
+  
+  }
+  
+  body {
+    background-color: black;
+    color: #ffff;
+    font-family: sans-serif;
+  }
+  
+  #Main {
+    height: 100vh;
+    width: 100%;
+  
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),
+    url("./images/MainBg.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+  }
+  
+  nav img:first-of-type {
+    width: 9rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  nav button {
+    border: none;
+    outline: none;
+    background-color: #e50914;
+    color: white;
+    padding: 7px 20px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  nav button:first-of-type {
+    background: transparent;
+    border: 1px solid white;
+    padding: 7px 20px;
+  }
+  
+  nav button:first-of-type img {
+    width: 10px;
+    margin-left: 7px;
+  }
+  
+  #header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    width: 40rem;
+    transform: translate(-50%, -50%);
+  }
+  
+  #header-content h1 
+  {
+  
+      font-size: 2rem;
+      font-weight: 600;
+      max-width: 800px;
+  }
+  
+  #header-content p
+  {
+      margin-top: 15px;
+      font-size: 0.9rem;
+  }
+  
+  #header-content form
+  {
+    /* border: 1px solid red; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  
+  #header-content input
+  {
+    
+    color: white;
+    padding: 10px 20px;
+    
+    border: 1px solid gray;
+    background: transparent;
+  }
+  
+  #header-content input::placeholder
+  {
+    
+   color: lightgray;
+  }
+  
+  
+  #header-content form button
+  {
+  
+      
+    padding: 10px 25px;
+    background-color:#e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #header-content form button img
+  {
+    width: 0.8rem;
+    margin-left: 7px;
+    
+  
+    transform: rotate(-90deg);
+  }
+  
+  
+  @media screen and (max-width:600px) {
+    #header-content h1
+    {
+      font-size: 3rem;
+    }#header-content p
+    {
+      font-size: 1.5rem;
+    }
+    
+    #header-content form
+    {
+      flex-direction: column;
+      
+    }
+    
+    #header-content form input
+    {
+      font-size: 2.5rem;
+      margin-top: 2rem;
+      
+    } #header-content form button
+    {
+      font-size: 2rem;
+      margin-top: 1rem;
+      
+    }
+  
+  }
+  
+  
+  
+  #TvBox
+  {
+    background-color: black;
+    color: white;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 4.5rem 0;
+  
+    gap: 5rem;
+    border: 1px solid white;
+  
+  
+  }
+  #TvContents
+  {
+    max-width: 400px;
+  }
+  
+  #TvContents h2
+  {
+    font-size: 2rem;
+  
+  }
+  #TvContents p
+  {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  
+  #TvVideo
+  {
+    background-image: url("./images/tv.png");
+    background-position: center;
+    background-size: cover;
+    height: 20rem;
+    width: 20rem;
+    /* z-index: 10; */
+   
+    /* background: transparent; */
+    position: relative;
+  }
+  
+  #Video
+  {
+    height: 97%;
+    width: 97%; 
+    position: absolute;
+    top: 0px;
+    left: 2px;
+    /* z-index: -1; */
+  }
+  
+  @media screen and (max-width: 720px) 
+  {
+  
+    #TvBox
+    {
+      flex-direction: column;
+    }
+  
+    #TvContents
+    {
+  
+      display: flex;
+      align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+  
+    #TvContents h2
+    {
+      font-size: 4rem;
+    }
+    
+    #TvContents p
+    {
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    #TvVideo
+    {  height: 25rem;
+      width: 25rem;
+    } 
+  }
+  
+  
